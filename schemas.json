@@ -1,0 +1,33 @@
+{
+  "ENA_HUMAN_v1.2": {
+    "name": "ENA_HUMAN",
+    "version": "1.2",
+    "description": "Human sample checklist",
+    "fields": {
+      "sample_name": {"type": "string", "required": true},
+      "tissue": {"type": "string", "required": true},
+      "age": {"type": "string", "required": false}
+    }
+  },
+  "ENA_HUMAN_v2.0": {
+    "name": "ENA_HUMAN",
+    "version": "2.0",
+    "description": "Human sample checklist version 2",
+    "fields": {
+      "sample_name": {"type": "string", "required": true},
+      "tissue": {"type": "string", "required": true},
+      "disease": {"type": "string", "required": true},
+      "age": {"type": "integer", "required": false}
+    }
+  },
+  "VIRAL_v2": {
+    "name": "VIRAL",
+    "version": "2",
+    "description": "Viral sample checklist",
+    "fields": {
+      "sample_name": {"type": "string", "required": true},
+      "virus_identifier": {"type": "string", "required": true},
+      "host": {"type": "string", "required": true}
+    }
+  }
+}
