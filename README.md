@@ -4,7 +4,7 @@ This repository contains a Proof of Concept (PoC) for the **BioSamples Message C
 
 By utilizing the newly emerging **FastMCP** framework, this PoC demonstrates how to securely bridge the gap between unstructured scientific inquiries and standardized metadata schemas while enforcing deterministic outputs, security boundaries, observability, and advanced normalization pipelines.
 
-## 🚀 Key Concepts Demonstrated
+##  Key Concepts Demonstrated
 
 1. **FastMCP Integration & Tool Definition**
    - The server publishes a tool (`get_checklist_recommendations`) using the MCP protocol.
@@ -40,7 +40,7 @@ By utilizing the newly emerging **FastMCP** framework, this PoC demonstrates how
    - Integrated with `structlog`.
    - The system outputs structured JSON logs for every tool invocation. It explicitly logs the `decision_reasoning` capturing exact calculations (e.g., *SemanticSim (0.92), AttrMatch (0.43)*) for audit transparency.
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Python 3.11+
@@ -68,7 +68,7 @@ By utilizing the newly emerging **FastMCP** framework, this PoC demonstrates how
    pip install "mcp[cli]" fastmcp sentence-transformers httpx structlog pydantic numpy
    ```
 
-## 🧪 Running the Verification Tests
+##  Running the Verification Tests
 
 To see the system in action and verify its behaviors, run the integrated test script:
 
@@ -101,7 +101,7 @@ The test script automatically runs 6 distinct scenarios proving the PoC's logic:
 
 Throughout the execution, you will see the **JSON Structlogs** explicitly tracking tool invocations, the mock BioValidator `TimeoutExceptions`, fallback events, and the exact arithmetic reasoning for every candidate checklist!
 
-## 🔧 Architecture & Core Files
+##  Architecture & Core Files
 
 - **`server.py`**: The FastMCP server orchestrator containing the core tool logic and Pydantic models.
 - **`ranking_engine.py`**: The intelligent Multi-Factor ranking engine handling Sentence-BERT embeddings, Ontology matching, and strict arithmetic scoring heuristics.
